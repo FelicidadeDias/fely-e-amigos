@@ -1,85 +1,268 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Fely e Amigos</title>
+<title>Fely e Amigos | Educação e Aprendizagem</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #222;
-            text-align: center;
-        }
+<style>
 
-        header {
-            background: #222;
-            color: white;
-            padding: 60px 20px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
 
-        .slogan {
-            font-size: 20px;
-        }
+/* MENU */
 
-        section {
-            max-width: 700px;
-            margin: 30px auto;
-            padding: 30px;
-            background: white;
-            border-radius: 15px;
-        }
+nav {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
 
-        footer {
-            padding: 25px;
-            background: #222;
-            color: white;
-        }
-    </style>
+nav a {
+    color: #1d3557;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+}
+
+/* CAPA */
+
+header {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* SEÇÕES */
+
+section {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 35px 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #1d3557;
+}
+
+/* CARTÕES */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    padding: 25px;
+    background: #eef3f9;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #1d3557;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 25px;
+    background: #1d3557;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+}
+
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Fely e Amigos</h1>
-    <p class="slogan">
-        Entender para ensinar. Ensinar para transformar.
-    </p>
+<nav>
+
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#pais">Para Pais</a>
+<a href="#estudantes">Estudantes</a>
+<a href="#contacto">Contacto</a>
+
+</nav>
+
+
+<header id="inicio">
+
+<h1>Fely e Amigos</h1>
+
+<p>
+Entender para ensinar. Ensinar para transformar.
+</p>
+
 </header>
 
-<section>
-    <h2>Bem-vindo!</h2>
 
-    <p>
-        O Fely e Amigos é um projeto dedicado à educação,
-        aprendizagem e desenvolvimento.
-    </p>
+<section id="sobre">
 
-    <p>
-        Aqui vamos compartilhar conteúdos simples,
-        úteis e educativos para pais, estudantes e educadores.
-    </p>
+<h2>Bem-vindo ao Fely e Amigos</h2>
+
+<p>
+O Fely e Amigos é um projeto dedicado à educação,
+aprendizagem e desenvolvimento.
+</p>
+
+<p>
+O nosso objetivo é transformar conhecimento em
+conteúdos simples, úteis e acessíveis.
+</p>
+
 </section>
 
-<section>
-    <h2>O nosso objetivo</h2>
 
-    <p>
-        Ajudar famílias e estudantes a compreender melhor
-        os desafios da aprendizagem.
-    </p>
+<section>
+
+<h2>O que você encontrará aqui?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>👨‍👩‍👧 Para Pais</h3>
+
+<p>
+Informações e estratégias para ajudar os filhos
+a estudar e aprender melhor.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🎓 Para Estudantes</h3>
+
+<p>
+Dicas de estudo, explicações e conteúdos
+para facilitar a aprendizagem.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📚 Educação</h3>
+
+<p>
+Conteúdos educativos apresentados de forma
+simples e prática.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<section id="pais">
+
+<h2>Para Pais</h2>
+
+<p>
+Seu filho estuda, mas parece não aprender?
+Aqui vamos abordar possíveis dificuldades de
+aprendizagem e maneiras de ajudar.
+</p>
+
+<a class="botao" href="#contacto">
+Saber mais
+</a>
+
+</section>
+
+
+<section id="estudantes">
+
+<h2>Para Estudantes</h2>
+
+<p>
+Aprender não precisa ser complicado.
+Vamos apresentar métodos, exercícios e
+estratégias para estudar melhor.
+</p>
+
+</section>
+
+
+<section id="contacto">
+
+<h2>Contacto</h2>
+
+<p>
+Entre em contacto com o Fely e Amigos para
+acompanhar os nossos conteúdos e novidades.
+</p>
+
+<p>
+📱 Em breve disponibilizaremos os nossos
+canais oficiais.
+</p>
+
+</section>
+
 
 <footer>
-    Fely e Amigos © 2026
+
+<p><strong>Fely e Amigos</strong></p>
+
+<p>
+Entender para ensinar. Ensinar para transformar.
+</p>
+
+<p>
+© 2026 Fely e Amigos
+</p>
+
 </footer>
 
 </body>
