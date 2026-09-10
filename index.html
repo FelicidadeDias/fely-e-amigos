@@ -1,156 +1,317 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Fely e Amigos | Educação e Aprendizagem</title>
 
+<meta name="description" content="Fely e Amigos — conteúdos educativos, estratégias de aprendizagem para pais, estudantes e educadores.">
+
 <style>
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f7fb;
     color: #222;
+    line-height: 1.6;
 }
 
-/* MENU */
+
+/* =========================
+   MENU
+========================= */
 
 nav {
-    background: white;
-    padding: 18px;
+    background: #ffffff;
+    padding: 16px 10px;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 10;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
 }
 
 nav a {
+    display: inline-block;
     color: #1d3557;
     text-decoration: none;
-    margin: 0 8px;
+    margin: 5px 8px;
     font-weight: bold;
+    font-size: 14px;
 }
 
-/* CAPA */
-
-<style>
-
-* {
-    box-sizing: border-box;
+nav a:hover {
+    color: #457b9d;
 }
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
-}
 
-/* MENU */
-
-nav {
-    background: white;
-    padding: 18px;
-    text-align: center;
-}
-
-/* CAPA */
+/* =========================
+   CAPA / HERO
+========================= */
 
 header {
-    background: #1d3557;
+    background: linear-gradient(135deg, #1d3557, #457b9d);
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 85px 20px;
 }
 
-/* LOGOTIPO */
 .logo {
-    font-size: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    border: 3px solid rgba(255,255,255,0.8);
+    border-radius: 50%;
+    font-size: 38px;
     font-weight: bold;
-    margin-bottom: 10px;
+    letter-spacing: -3px;
 }
 
 .logo span {
-    font-size: 32px;
+    font-size: 30px;
+    margin: 0 2px;
 }
 
 header h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
+    font-size: 46px;
+    margin-bottom: 12px;
 }
 
-header p {
-    font-size: 20px;
-}
-/* SEÇÕES */
-
-section {
-    max-width: 900px;
-    margin: 35px auto;
-    padding: 35px 25px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+.slogan {
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 
-section h2 {
-    color: #1d3557;
+.descricao {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 17px;
+    opacity: 0.95;
 }
 
-/* CARTÕES */
 
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.card {
-    flex: 1;
-    min-width: 220px;
-    padding: 25px;
-    background: #eef3f9;
-    border-radius: 12px;
-}
-
-.card h3 {
-    color: #1d3557;
-}
-
-/* BOTÃO */
+/* =========================
+   BOTÕES
+========================= */
 
 .botao {
     display: inline-block;
     margin-top: 15px;
     padding: 14px 25px;
-    background: #1d3557;
-    color: white;
+    background: #ffffff;
+    color: #1d3557;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-/* RODAPÉ */
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(0,0,0,0.18);
+}
+
+
+/* Botão azul */
+
+.botao-azul {
+    background: #1d3557;
+    color: white;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 40px 30px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #1d3557;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARTÕES
+========================= */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    padding: 28px 22px;
+    background: #eef3f9;
+    border-radius: 15px;
+    border-left: 5px solid #457b9d;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #1d3557;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+/* =========================
+   VÍDEO
+========================= */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 25px;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto-box {
+    text-align: center;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
 
 footer {
     background: #1d3557;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 35px 20px;
     margin-top: 50px;
 }
 
+footer p {
+    margin: 6px 0;
+}
+
+
+/* =========================
+   RESPONSIVO — TELEMÓVEL
+========================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 4px 5px;
+        font-size: 13px;
+    }
+
+    header {
+        padding: 65px 18px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
+
+    section {
+        margin: 22px 12px;
+        padding: 30px 20px;
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+}
+
 </style>
+
 </head>
 
 <body>
+
+
+<!-- =========================
+     MENU
+========================= -->
 
 <nav>
 
@@ -164,9 +325,16 @@ footer {
 
 </nav>
 
+
+<!-- =========================
+     CAPA
+========================= -->
+
 <header id="inicio">
 
-<div class="logo">F<span>&</span>A</div>
+<div class="logo">
+F<span>&</span>A
+</div>
 
 <h1>Fely e Amigos</h1>
 
@@ -185,30 +353,46 @@ Explorar conteúdos
 
 </header>
 
-<section id="sobre">
+
+<!-- =========================
+     SOBRE
+========================= -->
 
 <section id="sobre">
 
-<h2>Sobre nós</h2>
+<h2>🌱 Sobre o Fely e Amigos</h2>
 
 <p>
-O Fely e Amigos nasceu com o objetivo de tornar
-assuntos relacionados com educação e aprendizagem
-mais simples e compreensíveis.
+O <strong>Fely e Amigos</strong> nasceu com o objetivo de tornar
+assuntos relacionados com educação e aprendizagem mais simples,
+claros e compreensíveis.
 </p>
 
 <p>
-Queremos ajudar pais, estudantes e educadores
-a encontrar informação útil para enfrentar
-os desafios da aprendizagem.
+Queremos ajudar pais, estudantes e educadores a encontrar
+informação útil para enfrentar os desafios da aprendizagem.
+</p>
+
+<p>
+Acreditamos que compreender melhor como aprendemos é um
+passo importante para ensinar e aprender melhor.
 </p>
 
 </section>
 
 
+<!-- =========================
+     CONTEÚDOS
+========================= -->
+
 <section id="conteudos">
 
 <h2>📚 Conteúdos educativos</h2>
+
+<p>
+Explore conteúdos preparados para diferentes necessidades
+de aprendizagem.
+</p>
 
 <div class="cards">
 
@@ -217,76 +401,45 @@ os desafios da aprendizagem.
 <h3>👨‍👩‍👧 Para Pais</h3>
 
 <p>
-Estratégias para compreender e apoiar
-melhor a aprendizagem dos seus filhos.
+Estratégias para compreender e apoiar melhor
+a aprendizagem dos seus filhos.
 </p>
 
+<a class="botao botao-azul" href="#pais">
+Ver conteúdo
+</a>
+
 </div>
+
 
 <div class="card">
 
 <h3>🎓 Para Estudantes</h3>
 
 <p>
-Dicas, métodos de estudo e explicações
-para aprender de forma mais eficiente.
+Dicas, métodos de estudo e estratégias para
+aprender de forma mais eficiente.
 </p>
 
+<a class="botao botao-azul" href="#estudantes">
+Ver conteúdo
+</a>
+
 </div>
+
 
 <div class="card">
 
 <h3>🧠 Aprendizagem</h3>
 
 <p>
-Conteúdos sobre dificuldades de aprendizagem,
-atenção, memória e desenvolvimento.
+Conteúdos sobre atenção, memória, dificuldades
+de aprendizagem e desenvolvimento.
 </p>
 
-</div>
-
-</div>
-
-</section>
-</section>
-
-
-<h2>O que você encontrará aqui?</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>👨‍👩‍👧 Para Pais</h3>
-
-<p>
-Informações e estratégias para ajudar os filhos
-a estudar e aprender melhor.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>🎓 Para Estudantes</h3>
-
-<p>
-Dicas de estudo, explicações e conteúdos
-para facilitar a aprendizagem.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>📚 Educação</h3>
-
-<p>
-Conteúdos educativos apresentados de forma
-simples e prática.
-</p>
+<a class="botao botao-azul" href="#videos">
+Aprender mais
+</a>
 
 </div>
 
@@ -295,83 +448,119 @@ simples e prática.
 </section>
 
 
+<!-- =========================
+     VÍDEOS
+========================= -->
 
 <section id="videos">
 
 <h2>🎥 Vídeos educativos</h2>
 
 <p>
-Aprenda connosco através dos nossos vídeos
-sobre educação, aprendizagem e desenvolvimento.
+Aprenda connosco através dos nossos vídeos sobre educação,
+aprendizagem e desenvolvimento.
 </p>
 
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:15px;margin-top:25px;">
+<div class="video-container">
 
 <iframe
 src="https://www.youtube.com/embed/G-SRR4fF77Y"
-title="Fely e Amigos - Vídeo educativo"
-style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+title="Fely e Amigos - Meu filho estuda, mas não aprende. Por quê?"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
 
 </div>
 
-<br>
-
-<a class="botao"
+<a class="botao botao-azul"
 href="https://www.youtube.com/@FelyeAmigosOficial"
 target="_blank">
 📺 Ver mais vídeos no YouTube
 </a>
 
 </section>
+
+
+<!-- =========================
+     PARA PAIS
+========================= -->
+
 <section id="pais">
 
-<h2>Para Pais</h2>
+<h2>👨‍👩‍👧 Para Pais</h2>
 
 <p>
 Seu filho estuda, mas parece não aprender?
-Aqui vamos abordar possíveis dificuldades de
-aprendizagem e maneiras de ajudar.
+Nem sempre estudar mais significa aprender melhor.
 </p>
 
-<a class="botao" href="#contacto">
-Saber mais
+<p>
+Nesta área vamos abordar possíveis dificuldades de aprendizagem,
+hábitos de estudo, atenção, motivação e formas práticas de
+os pais apoiarem os seus filhos.
+</p>
+
+<a class="botao botao-azul" href="#videos">
+🎥 Ver conteúdos
 </a>
 
 </section>
 
+
+<!-- =========================
+     PARA ESTUDANTES
+========================= -->
 
 <section id="estudantes">
 
-<h2>Para Estudantes</h2>
+<h2>🎓 Para Estudantes</h2>
 
 <p>
 Aprender não precisa ser complicado.
-Vamos apresentar métodos, exercícios e
-estratégias para estudar melhor.
 </p>
+
+<p>
+Vamos apresentar métodos de estudo, exercícios,
+explicações e estratégias para ajudar os estudantes
+a organizar melhor os seus estudos.
+</p>
+
+<a class="botao botao-azul" href="#videos">
+📚 Começar a aprender
+</a>
 
 </section>
 
+
+<!-- =========================
+     CONTACTO
+========================= -->
 
 <section id="contacto">
 
-<h2>Contacto</h2>
+<div class="contacto-box">
+
+<h2>📱 Entre em contacto</h2>
 
 <p>
-Entre em contacto com o Fely e Amigos para
-acompanhar os nossos conteúdos e novidades.
+Quer acompanhar os nossos conteúdos, fazer uma pergunta
+ou saber mais sobre o projeto Fely e Amigos?
 </p>
 
-<a class="botao" href="https://wa.me/244948138785"target="_blank">
+<a class="botao whatsapp"
+href="https://wa.me/244948138785"
+target="_blank">
 💬 Falar connosco no WhatsApp
 </a>
 
+</div>
 
 </section>
 
+
+<!-- =========================
+     RODAPÉ
+========================= -->
 
 <footer>
 
@@ -382,10 +571,15 @@ Entender para ensinar. Ensinar para transformar.
 </p>
 
 <p>
-© 2026 Fely e Amigos
+Educação • Aprendizagem • Desenvolvimento
+</p>
+
+<p>
+© 2026 Fely e Amigos — Todos os direitos reservados.
 </p>
 
 </footer>
+
 
 </body>
 </html>
